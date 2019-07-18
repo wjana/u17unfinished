@@ -168,7 +168,9 @@
 		},
 		mounted(){
 			document.onscroll=null;
-			document.documentElement.scrollTop = 0
+			document.documentElement.scrollTop=0;
+			window.pageYOffset=0;
+			document.body.scrollTop=0;
 			
 			this.$http.get('./data/index.json')
 		    .then((res)=>{
