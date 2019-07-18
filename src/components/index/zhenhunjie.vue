@@ -149,7 +149,7 @@
 					
 				}
 				document.onscroll = function(){
-					var scrollTop = document.documentElement.scrollTop;
+					var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0;
 					var show = document.getElementById('gotop')
 					var write = document.getElementById('write')
 					if(scrollTop>400){
