@@ -259,7 +259,7 @@
 	.triangle{
 		width: 0;
 		height: 0;
-		border-width: 0 370px 60px 0;
+		border-width: 0 350px 60px 0;
 		border-style: solid;
 		border-color: transparent transparent white;
 		position: absolute;
