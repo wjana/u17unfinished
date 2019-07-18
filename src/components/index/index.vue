@@ -185,7 +185,7 @@
 		    })
 		    .finally((f)=>{
 		    	document.onscroll = function(){
-					var scrollTop = document.documentElement.scrollTop;
+					var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0;
 					var show = document.getElementById('gotop')
 					if(scrollTop>400){
 						show.style.display='block';
