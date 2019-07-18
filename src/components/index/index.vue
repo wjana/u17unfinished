@@ -168,6 +168,7 @@
 		},
 		mounted(){
 			document.onscroll=null;
+      var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0;
 			document.documentElement.scrollTop=0;
 			window.pageYOffset=0;
 			document.body.scrollTop=0;
